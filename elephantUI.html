@@ -12,7 +12,7 @@
 		.container{
 			max-width: 980px;
 			margin: 20px auto;
-			width: 95%;
+			width: 90%;
 			display: flex;
 			flex-wrap: wrap;
 			flex-direction: row;
@@ -41,25 +41,29 @@
 			font-size: 1.5rem;
 		}
 		.col-1{
-			width: 25%;
-			padding: .5em;
+			width: 21%;
+			padding: 1em;
 		}
 		.col-2{
 			width: 50%;
-			padding: .5em;
+			padding: 1em;
 		}
 		.col-3{
 			width: 75%;
-			padding: .5em;
+			padding: 1em;
 		}
 		.col-bg{
 			background: #212614;
-			padding: .5em;
+			padding: 1em;
 			color: #fff;
 		}
 		@media (max-width:  600px){
-			.col-1, .col-2, .col-3{
+			.columns{
+				flex-direction: column;
+			}
+			.col-1, .col-2, .col-3, .col-bg{
 				width: 100%;
+			}
 			}
 		}
 	</style>
